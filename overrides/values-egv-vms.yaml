@@ -8,4 +8,4 @@ vms:
     role: gpfs
     storageClassName: ibm-spectrum-scale-sample
     volumeMode: "Filesystem"
-    urlSource: "quay.io/containerdisks/fedora:41"
+    urlSource: "docker://quay.io/containerdisks/fedora:41"
