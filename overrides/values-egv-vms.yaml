@@ -7,4 +7,4 @@ vms:
     count: 1
     role: gpfs
     storageClassName: ibm-spectrum-scale-sample
-    VolumeMode: "Filesystem"
+    volumeMode: "Filesystem"
