@@ -8,4 +8,4 @@ vms:
     role: gpfs
     storageClassName: ibm-spectrum-scale-sample
     volumeMode: "Filesystem"
-    urlSource: "docker://registry:5000/kubevirt/alpine-container-disk-demo:devel"
+    urlSource: "quay.io/containerdisks/fedora:41"

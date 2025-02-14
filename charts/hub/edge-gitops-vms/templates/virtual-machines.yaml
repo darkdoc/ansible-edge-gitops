@@ -84,7 +84,7 @@ items:
 {{- if $vmr.urlSource }}
         source:
           registry:
-            url: docker://registry:5000/kubevirt/alpine-container-disk-demo:devel
+            url: {{ $vmr.urlSource }}
 {{- else }}
         sourceRef:
           kind: DataSource
