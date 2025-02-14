@@ -81,10 +81,16 @@ items:
       metadata:
         name: {{ $identifier }}
       spec:
+{{- if $vmr.urlSource }}
+        source:
+          registry:
+            url: docker://registry:5000/kubevirt/alpine-container-disk-demo:devel
+{{- else }}
         sourceRef:
           kind: DataSource
           name: {{ coalesce $vmr.dataSource $def.dataSource $vmr.os $def.os }}
           namespace: openshift-virtualization-os-images
+{{- end }}
         pvc:
           accessModes:
             - {{ coalesce $vmr.accessMode $def.accessMode }}
