@@ -3,3 +3,7 @@ vms:
   kiosk:
     count: 2
     role: kiosk
+  gpfs:
+    count: 1
+    role: gpfs
+    storageClassName: ibm-spectrum-scale-sample
